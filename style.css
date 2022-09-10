@@ -1,0 +1,123 @@
+.body{
+    padding-left: 1cm;
+    padding-right: 1cm;
+    min-width: 8cm;
+}
+
+.btn{
+    font-size: large;
+    border: 2px;
+    border-radius: 8px;
+    background-color:dodgerblue;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 4px;
+}
+
+
+.head{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+.card{
+    margin-top: 1cm;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card:hover .over{
+opacity: 1;
+}
+
+.sel{
+    margin-top: 1cm;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s;
+}
+.sel:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.sel:hover .over{
+    opacity: 1;
+}
+
+.poster{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.over{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    transition: 0.5s ease;
+    opacity: 0;
+    bottom: 0;
+    padding: 6px;
+    padding-bottom: 8px;
+}
+
+.title{
+color: white;
+}
+
+.rate{
+color: white;
+}
+
+.abv_btn{
+    display: flex;
+    align-items: center;
+}
+.abv_btn :hover{
+    cursor: pointer;
+}
+
+/* search */
+
+#type{
+border-radius: 8px;
+background-color: rgb(173, 254, 141);
+}
+
+.abv_id{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.abv_srh{
+    display: flex;
+    width: 100%;
+}
+
+#search{
+    background-color: rgb(173, 254, 141);
+    padding: 4px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 70%;
+}
+
+#srch_btn{
+    background-color: rgb(173, 254, 141);
+    padding: 4px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 30%;
+}
